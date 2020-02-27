@@ -1,0 +1,33 @@
+.welcome-section {
+  text-align: center;
+
+   .form-section {
+     display: inline-block;
+     padding: 30px;
+     margin: 10vh 0;
+     background-color: #fafafae3;
+
+    &>img {
+      display: inline-block;
+      max-width: 25rem;
+    }
+  }
+}
+
+  .link-btn {
+    position: absolute;
+    color: #787cca;
+
+    >a {
+      padding: 10px 0;
+      margin: 10px 20px;
+      cursor: pointer;
+    }
+  }
+
+  .name-class {
+    margin-top: 50px;
+    margin-left: 50px;
+    color: #b28a6e;
+  }
+

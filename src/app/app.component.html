@@ -1,22 +1,24 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
-  <div class="navbar-nav">
-    <a class="nav-item nav-link"
-       routerLink="/"
-       routerLinkActive="active-link">Recipes</a>
-<!--    <a class="nav-item nav-link"-->
-<!--       routerLink="/about-users"-->
-<!--       routerLinkActive="active-link">About users</a>-->
-    <button mat-stroked-button class="nav-item nav-link"
-       color="primary"
-       (click)="logout()"
-       routerLinkActive="active-link">Logout</button>
-  </div>
-</nav>
+<div class="background-image">
+  <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link"
+         routerLink="/"
+         routerLinkActive="active-link">Recipes</a>
+  <!--    <a class="nav-item nav-link"-->
+  <!--       routerLink="/about-users"-->
+  <!--       routerLinkActive="active-link">About users</a>-->
+      <button mat-stroked-button class="nav-item nav-link"
+         color="primary"
+         (click)="logout()"
+         routerLinkActive="active-link">Logout</button>
+    </div>
+  </nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6 offset-sm-3">
-      <router-outlet></router-outlet>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>
